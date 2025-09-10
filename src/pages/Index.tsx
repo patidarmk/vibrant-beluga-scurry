@@ -3,6 +3,7 @@ import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { Todo } from '@/types';
 import TodoForm from '@/components/TodoForm';
 import TodoItem from '@/components/TodoItem';
+import WeatherWidget from '@/components/WeatherWidget';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -56,6 +57,7 @@ const Index = () => {
 
   return (
     <div className="container mx-auto max-w-2xl py-12">
+      <WeatherWidget />
       <Card className="bg-white/30 backdrop-blur-lg border-gray-200/50 shadow-2xl shadow-blue-500/10">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center text-gray-800">
