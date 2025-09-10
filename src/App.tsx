@@ -12,6 +12,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Index from "./pages/Index";
 import Layout from './components/Layout';
+import NotFound from './pages/NotFound';
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const rootRoute = createRootRoute({
       </TooltipProvider>
     </QueryClientProvider>
   ),
+  notFoundComponent: NotFound,
 })
 
 // Create index route
